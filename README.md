@@ -1,23 +1,26 @@
 # python-mongo-library
 [![Made with Python](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white)](https://www.python.org)
-[![Made with ArangoDB](https://img.shields.io/badge/ArangoDB-DDE072?style=for-the-badge&logo=ArangoDB&logoColor=white)](https://arangodb.com/)
+[![Made with MongoDB]([https://img.shields.io/badge/ArangoDB-DDE072?style=for-the-badge&logo=ArangoDB&logoColor=white](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white))](https://ferretdb.io)
 
 Playground CRUD application in Python to manage a Public Library. Backed by MongoDB or similar.
 
 ## Requirements
-- Python HTTP REST server with configurable: $PORT, $MONGO_URL, $MONGO_USER, $MONGO_PASSWORD
+- Python HTTP REST server with configurable environment variables (e.g. `$PORT`, `$MONGO_URL`, `$MONGO_USER`, `$MONGO_PASSWORD`)
 - Script to launch the Dockerized version of the database
 - Dockerfile to containerise the Python App
 - Github Actions Pipeline to build the Docker image and push to Dockerhub to every released git tag.
 - Optional: Frontend application to consume the Python API and corresponding Dockerfile
 
-## Goals:
+## Goals
+
 - Learn Python
 - Learn REST API convention
+- Learn Unit Testing and Mocking (the database)
+- Learn Project foldering
 - Learn Docker
 - Learn Github Action pipelines
 - Learn Git Tagging
-- Learn Document Database
+- Learn NoSQL Database Paradigm
 - Learn CRUD (Create Read Update Release)
 
 ## Features
@@ -78,10 +81,10 @@ The collections must be:
 
 ## Hints
 
-- Instead of Using MongoDB in the very spirit of OpenSource you can evaluate to use `ArangoDB` or `FerretDB`
+- Instead of Using MongoDB in the very spirit of Open Source you can evaluate to use [FerretDB](https://docs.ferretdb.io/quickstart-guide/docker) which is an Open Source alternative backed by PostGres
 - Use the best practices of programming: do not push on `main`, merge only approved PRs, encourage discussions over PR Reviews and Issues
-- Write unit tests where possible
-- Optimise the Dockerfile and take care of Container security
+- Write unit tests where possible by mocking the access to the database
+- Optimise the Dockerfile size and take care of Container security
 
 ## Contributing
 
