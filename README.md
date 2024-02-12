@@ -1,6 +1,6 @@
 # python-mongo-library
 [![Made with Python](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white)](https://www.python.org)
-[![Made with MongoDB]([https://img.shields.io/badge/ArangoDB-DDE072?style=for-the-badge&logo=ArangoDB&logoColor=white](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)](https://ferretdb.io)
+[![Made with MongoDB](https://img.shields.io/badge/ArangoDB-DDE072?style=for-the-badge&logo=ArangoDB&logoColor=white](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)](https://ferretdb.io)
 
 Playground CRUD application in Python to manage a Public Library. Backed by MongoDB or similar.
 
